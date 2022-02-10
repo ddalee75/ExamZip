@@ -12,4 +12,5 @@ et le changer en 2 pour ne pas etre embeter si dans s1 il y a le meme caractere.
 
 Union = 
 affchie tous les differents caracteres dans les 2 strings sans double. dans l'ordre
-- 
+ex abcdff abcdefs
+= abcdfes
