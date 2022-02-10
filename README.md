@@ -13,10 +13,10 @@ N 5 	rotone			rot13
 
 N 6 	inter			union
 
-N 7	  range			rrange			itoa
+N 7	  ft_range			ft_rrange			ft_itoa
 
-N 8 	split			expand_str
+N 8 	ft_split			expand_str
 
 N 9	  list_remove_it
 
-N10	  count island		infini_mult
+N10	  count_island		infini_mult
