@@ -9,8 +9,16 @@ solution :
 -changer les valeurs de tableau a laide de s2. le rendre 1,
 -parcourir s1 si les valeurs de tableau de s2 est 1, imprime le, 
 et le changer en 2 pour ne pas etre embeter si dans s1 il y a le meme caractere. 
+indice !! ascii[(int)s1[i]]
+
 
 Union = 
 affchie tous les differents caracteres dans les 2 strings sans double. dans l'ordre
 ex abcdff abcdefs
 = abcdfes
+
+solution :
+- creer un tableau de 256 et le mettre 0 partout
+- imprimer s1 et changer sa valeur dans tableau en 1
+- imprimer s2et changer sa valeur dans tableau en 1
+indice !! ascii[(int)s1[i]] 
