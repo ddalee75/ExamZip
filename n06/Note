@@ -1,0 +1,13 @@
+Inter = 
+- les caracteres qui apparaient dans les deux strings. 
+- affiche par l'ordre de string 1. 
+ex abcdff abcdefs
+= abcdf
+
+solution : 
+-creer un tableau de 256 et le mettre 0 partout. 
+-changer les valeurs de tableau a laide de s2. le rendre 1,
+-parcourir s1 si les valeurs de tableau de s2 est 1, imprime le, 
+et le changer en 2 pour ne pas etre embeter si dans s1 il y a le meme caractere. 
+
+Union
