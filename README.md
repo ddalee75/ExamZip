@@ -19,4 +19,4 @@ N 8 	ft_split			expand_str
 
 N 9	list_remove_it
 
-N10	count_island		infini_mult
+N10	count_island		infini_mult		gdiam
