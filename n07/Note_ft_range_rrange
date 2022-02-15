@@ -1,0 +1,15 @@
+creer une function pour confirmer le nombre de int pour malloc
+dans ft_range :
+  1. savoir nombre de malloc (n = 1 +  nombre de int )
+  2 malloc (sizeof(int))
+  3 definir un range si c'est 1 ou -1 en comparant start et end. 
+  4 creer un boucle pour coller int par int dans array
+    array[i] = start 
+    redefinir start (start = start +range)
+  5 return (array);
+  
+  
+  ft_rrange idem 
+  jusaqu'a 4. array[i] = end
+  
+  
