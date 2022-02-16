@@ -1,0 +1,10 @@
+need : une function pour free
+need : ft_strlen
+need: une function pour counter les mots 
+need. une function pour cpy les mots
+need ft_split
+
+separator = ' ' '\t' '\n' 
+debut : s[i] && s[i] == ' ' || '\t' || '\n' => i++
+puis qd compter les mots ; s[i] && s[i] != ' ' && s[i] != '\t' && s[i] != '\n' => i++;
+
