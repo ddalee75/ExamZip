@@ -7,10 +7,10 @@ while (n/10)
   malloc longeur de char
   mettre '\0' to array
   cas nbr = 0
-  cas nbr < 0
-  cas nbr > 0 (else)
+  cas nbr < 0  (else)
+  cas nbr > 0
   convertir to char
-  
+ 
  return (char)
   
   
