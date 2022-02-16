@@ -1,6 +1,7 @@
 itoa 
 
 1 conuter la longeur d' int
+while (n/10)
   
 2 char *ft_itoa(int nbr)
   malloc longeur de char
