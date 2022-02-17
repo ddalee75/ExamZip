@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_itoa2.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chilee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/14 14:37:20 by chilee            #+#    #+#             */
-/*   Updated: 2022/02/17 17:36:22 by chilee           ###   ########.fr       */
+/*   Created: 2022/02/17 18:10:14 by chilee            #+#    #+#             */
+/*   Updated: 2022/02/17 18:27:45 by chilee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdio.h>
 
-size_t	count_int(int nb)
+int	ft_count(int n)
 {
-	size_t count;
+	int count;
 
 	count = 1;
-	if (nb < 0)
+	if (n < 0)
 		count++;
-	while (nb / 10)
+	while (n / 10)
 	{
-		nb = nb / 10;
+		n = n / 10;
 		count++;
 	}
 	return (count);
@@ -31,39 +30,37 @@ size_t	count_int(int nb)
 
 char	*ft_itoa(int nbr)
 {
-	size_t			len;
-	char			*dest;		
-	unsigned int	num; 
+	unsigned int	n;
+	char			*dest;
+	int				len;
 
-	len = count_int(nbr);
-	dest = malloc(sizeof(char) * len + 1);
+	len = ft_count(nbr);
+	dest = (char *)malloc(sizeof(char) * (len + 1));
 	if (!dest)
 		return (NULL);
 	dest[len] = '\0';
-	if (nbr == 0) 
+	if (nbr == 0)
 		dest[0] = '0';
-	if (nbr < 0)
+	else if (nbr < 0)
 	{
-		num = nbr * -1;  
+		n = -nbr;
 		dest[0] = '-';
-	 }
-	 else 
-		 num = nbr;
-	while (num > 0)
+	}
+	else
+		n = nbr;
+	while (n > 0)
 	{
-		dest[len - 1] = (num % 10) + '0';
-		num = num / 10;
+		dest[len - 1] = n % 10 + '0';
+		n = n / 10;
 		len--;
 	}
 	return (dest);
 }
 
+#include <stdio.h>
+
 int	main(void)
 {
-	int n;
-
-	n = -2147483648;
-	printf("%s", ft_itoa(n));
-	return (0);
+	printf("%s\n", ft_itoa(-2147483648));
+	return (0);	
 }
-
