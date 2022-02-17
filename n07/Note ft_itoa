@@ -1,14 +1,17 @@
 itoa 
 
 1 conuter la longeur d' int
+si n < 0
 while (n/10)
   
 2 char *ft_itoa(int nbr)
+!! unsigned int n = nbr (sinon -2147483648 ne marche pas)
   malloc longeur de char
   mettre '\0' to array
-  cas nbr = 0
-  cas nbr < 0  (else)
-  cas nbr > 0
+  if cas nbr = 0
+  else if cas nbr < 0  
+  esle 
+  while nbr > 0
   convertir to char
  
  return (char)
