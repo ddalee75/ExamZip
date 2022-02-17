@@ -1,4 +1,4 @@
-Inter = 
+Inter =  (rapide note : write s1, noublie pas de reinitialiser i = 0))
 - les caracteres qui apparaient dans les deux strings. 
 - affiche par l'ordre de string 1. 
 ex abcdff abcdefs
@@ -12,7 +12,7 @@ et le changer en 2 pour ne pas etre embeter si dans s1 il y a le meme caractere.
 indice !! ascii[(int)s1[i]]
 
 
-Union = 
+Union = (rapide note : write s1 et s2 noublie pas de reinitialiser i = 0))
 affchie tous les differents caracteres dans les 2 strings sans double. dans l'ordre
 ex abcdff abcdefs
 = abcdfes
