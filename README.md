@@ -9,9 +9,9 @@ N 3 	fizz puzz
 
 N 4	aff_first_param	    aff_last_param
 
-N 5 	rotone				rot13
+N 5 	fistword	rotone				rot13
 
-N 6 	inter				union
+N 6 	inter				union		lastword
 	
 N 7	ft_range			ft_rrange		ft_itoa
 
