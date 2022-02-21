@@ -1,0 +1,2 @@
+cette condition a mettre en 1er sinon KO.
+if (n % 3 == 0 && n % 5 == 0) 
