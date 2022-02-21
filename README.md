@@ -17,7 +17,7 @@ N 7	ft_range			ft_rrange		ft_itoa
 
 N 8 	ft_split			expand_str
 
-N 9	list_remove_it
+N 9	list_remove_it	sort_list
 
 N10	count_island		infini_mult		gdiam
 
