@@ -26,11 +26,11 @@ N10	count_island		infini_mult		gdiam
 
 Exam Vendredi 18/02
 
-1 affz
-2 putstr
-3 fizzpuzz
-4 aff_last_param 
-5 rotone
-6 inter
-7 ft_rrange
+1 affz(7m)
+2 putstr(4m)
+3 fizzpuzz(1h05m)
+4 aff_last_param (6m)
+5 rotone(17m)
+6 union(20m)
+7 ft_rrange(40m)
 8 expand_str
