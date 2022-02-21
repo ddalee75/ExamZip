@@ -25,6 +25,7 @@ N10	count_island		infini_mult		gdiam
 
 
 Exam Vendredi 18/02
+
 1 affz
 2 putstr
 3 fizzpuzz
