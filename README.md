@@ -20,3 +20,16 @@ N 8 	ft_split			expand_str
 N 9	list_remove_it
 
 N10	count_island		infini_mult		gdiam
+
+
+
+
+Exam Vendredi 18/02
+1 affz
+2 putstr
+3 fizzpuzz
+4 aff_last_param 
+5 rotone
+6 inter
+7 ft_rrange
+8 expand_str
