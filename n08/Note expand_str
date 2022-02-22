@@ -1,8 +1,8 @@
 1 une funtion pour compter la longeur d'un mot
 2 expland_str
-  faut avoir 1 int first_word =1 pour ne pas imprimer "   " 
+  faut avoir 1 int printspace =1 pour ne pas imprimer "   " 
   faut avoir 1 len (envoie vers function pour compter la longeur)
-  redefinir first_word = 0 
+  redefinir printspace = 0 
   et redefinir index
   
     i           i    i       i        i     i    i
