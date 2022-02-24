@@ -1,0 +1,8 @@
+multiplication technique
+https://blog.csdn.net/l_liangkk/article/details/51980763
+
+len_all = len s1 + len s2 (la longueur de len_all ne depasse jamais len s1 + len s2)
+ex; 
+123 x456 (6 char)= 56088 (5 char)
+12 x 10 (4 char)= 120 (3 char)
+10000 x 10000 (10 char) = 100000000 (9 char)
