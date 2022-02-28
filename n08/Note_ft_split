@@ -8,3 +8,10 @@ separator = ' ' '\t' '\n'
 debut : s[i] && s[i] == ' ' || '\t' || '\n' => i++
 puis qd compter les mots ; s[i] && s[i] != ' ' && s[i] != '\t' && s[i] != '\n' => i++;
 
+
+
+version simple !!!
+
+malloc tab
+
+malloc tab[i_tab] (cette malloc doit etre dans la boulce while sinon il malloc pas quand i_tab++ !!!

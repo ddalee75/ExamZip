@@ -1,46 +1,54 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sort_list.c                                        :+:      :+:    :+:   */
+/*   sort_list3.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chilee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/22 14:02:42 by chilee            #+#    #+#             */
-/*   Updated: 2022/02/28 15:10:39 by chilee           ###   ########.fr       */
+/*   Created: 2022/02/28 14:30:25 by chilee            #+#    #+#             */
+/*   Updated: 2022/02/28 14:49:13 by chilee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "list.h"
+//#include <stdio.h>
+
+//#include "list.h"
+
+
+typedef struct 		s_list
+{
+	struct s_list			*next;
+	int				data;
+}			t_list;
 
 int	cmp(int a, int b)
 {
 	return (a <= b);
 }
 
-t_list	*sort_list(t_list	*lst, int(*cmp)(int, int))
+t_list	*sort_list(t_list *lst, int(*cmp)(int, int))
 {
-	int		swap;
+	int	swap;
 	t_list	*start;
 
-	start = lst;
+	start =  lst;
 	while (lst->next)
 	{
-		if ((cmp(lst->data, lst->next->data)) == 0)
+		if (cmp(lst->data, lst->next->data) == 0)
 		{
 			swap = lst->data;
-			lst->data = lst->next->data;
+			lst->data =  lst->next->data;
 			lst->next->data = swap;
 			lst = start;
 		}
-		else 
+		else
 			lst = lst->next;
 	}
 	return (start);
 }
 
-#include <stdio.h>
-
+/*
 int	main(void)
 {
 	t_list *list;
@@ -65,4 +73,4 @@ int	main(void)
 		list = list->next;
 	}
 	return (0);
-}
+}*/
