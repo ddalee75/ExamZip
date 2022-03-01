@@ -24,7 +24,7 @@ N10	count_island		infini_mult		gdiam
 
 
 
-Exam Vendredi 18/02
+Exam Vendredi 18/02 (70/100)	
 
 1 affz(7m)
 2 putstr(4m)
@@ -34,3 +34,16 @@ Exam Vendredi 18/02
 6 union(20m)
 7 ft_rrange(40m)
 8 expand_str
+
+Exam Mardi 01/03 (80/100)
+
+1 affz (5m)
+2 putstr (4m)
+3 fizzpuzz(11m)
+4 aff_first_param (7m)
+5 rot_13 (19m);
+6 union (14m)
+7 iota (1h9m)
+8 ft_split (24m)
+9 list_remove_if 
+
