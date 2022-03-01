@@ -6,7 +6,7 @@
 /*   By: chilee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 14:31:39 by chilee            #+#    #+#             */
-/*   Updated: 2022/02/24 17:32:04 by chilee           ###   ########.fr       */
+/*   Updated: 2022/03/01 16:51:59 by chilee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ void	infin_mult(char *s1, char *s2)
 	len2 = ft_strlen(s2);
 	len_all = len1 + len2;
 	arr = (int *)malloc(sizeof(int) * len_all);
+	if (!arr)
+		return;
 	i = 0;
 	while (i < len_all)
 	{
