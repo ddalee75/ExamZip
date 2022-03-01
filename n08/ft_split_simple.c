@@ -21,7 +21,7 @@ char	**ft_split(char *str)
 	int	j;
 	char ** ret;
 
-	ret = (char **)malloc(sizeof(char *) * 1024);
+	ret = (char **)malloc(sizeof(char *) * 10000);
 	if (!ret)
 		return (NULL);
 	while (str[i] && (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'))
@@ -29,7 +29,7 @@ char	**ft_split(char *str)
 	while (str[i])
 	{
 		j = 0;
-		ret[tab] = (char *)malloc(sizeof(char) * 1024);
+		ret[tab] = (char *)malloc(sizeof(char) * 10000);
 		if (!ret)
 			return (NULL);
 		while (str[i] && (str[i] != ' ') && (str[i] != '\t') && (str[i] != '\n'))
