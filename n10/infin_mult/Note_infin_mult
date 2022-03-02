@@ -6,3 +6,32 @@ ex;
 123 x456 (6 char)= 56088 (5 char)
 12 x 10 (4 char)= 120 (3 char)
 10000 x 10000 (10 char) = 100000000 (9 char)
+
+
+
+
+3 function ;
+ft_strlen
+infin mult
+int main
+
+1. si s1 et s2 sont < 0 ou si s1 et s2 sont >0
+2 si s1 < 0 ou s2 <0 && s1[i] != 0 && s2 != 0 => print '-'
+
+infin mult = 
+si s1 == 0 || s2 == 0
+write 0
+malloc int array
+rempli les 0 dans arr 
+len1
+len2
+len all = len1 + len2
+formule math 
+arr[i + j + 1] += s1[i] - '0' * s2[j] - '0'
+arr[i-1] += arr[i] /10
+arr[i] = arr[i] % 10;
+char c = arr[i] + '0'
+write &c
+free arr
+
+ne pas utiliser arr[i] != '\0' sur int.. ca n existe pas... 
