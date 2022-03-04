@@ -1,0 +1,5 @@
+ft_read
+mallo (sizeof(char)*len + 1n
+
+ft-fill
+if (not while)
