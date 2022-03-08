@@ -4,7 +4,7 @@ it must return its parameter.  Beware that the string wont be modifiable.
 Ecrire une function qui affichea une chaine de caractere mqis en sens inverse. 
 Elle doit retourner ce quil lui a ete passé en parametre.
 Attention la chaine passee en parametre ne sera pas modifiable. 
-cette fuction serq prototyp2e comme siuit: 
+cette fuction serq prototypée comme siuit: 
 
 char  *rev_print(char *str);
 
