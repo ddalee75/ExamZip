@@ -116,5 +116,6 @@ int main(int ac, char **av)
 		}
 		free(s);
 	}
+	close(fd);
 	return (0);
 }
