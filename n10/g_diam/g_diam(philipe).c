@@ -26,7 +26,7 @@ void	ft_putnbr(int nb)
 	write(1, &c, 1);
 }
 
-void	ft_nodes(int max, int path[max], int grid[max][max], int y, int pos)
+void	ft_nodes(int max, int path[max], int grid[max][max], int y, int len)
 {
 	int	x;
 
@@ -36,9 +36,9 @@ void	ft_nodes(int max, int path[max], int grid[max][max], int y, int pos)
 	{
 		if (path[x] == 0 && grid[x][y] == 1)
 		{
-			if (nodes < pos + 1)
-				nodes = pos + 1;
-			ft_nodes(max, path, grid, x, pos + 1);
+			if (nodes < len + 1)
+				nodes = len + 1;
+			ft_nodes(max, path, grid, x, len + 1);
 		}
 	}
 	path[y] = 0;
