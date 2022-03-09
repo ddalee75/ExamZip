@@ -6,7 +6,7 @@
 /*   By: chilee <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:24:40 by chilee            #+#    #+#             */
-/*   Updated: 2022/03/07 12:00:11 by chilee           ###   ########.fr       */
+/*   Updated: 2022/03/08 18:23:45 by chilee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,8 @@ int 	ft_check (char *s)
 
 	if (len_0 > 1024)
 		return (0);
+	if (s[i] == '\0' ||  s[i] == '\n')
+		return(0);
 	while (s[i])
 	{
 		if ((s[i] != 'X' && s[i] != '\n' && s[i] != '.' && s[i] != '\0') ||
@@ -92,30 +94,36 @@ int main(int ac, char **av)
 	if (ac != 2)
 	{
 		write(1, "\n", 1);
+		return (0);
 	}
-	fd = open(av[1], O_RDONLY);
-	if(fd >0 && ft_read(fd, &s, 0) && ft_check(s) == 1)
-	{
-		while(s[i])
+	if (ac == 2)
+	{ 
+		fd = open(av[1], O_RDONLY);
+		if(fd >0 && ft_read(fd, &s, 0) && ft_check(s) == 1)
 		{
-			if (s[i] == 'X')
-			{
-				ft_fill(s, i, nb);
-				nb++;
-			}
-			i++;
-		}
-		if (nb < 10)
-		{
-			i = 0;
 			while(s[i])
 			{
-				ft_putchar(s[i]);
+				if (s[i] == 'X')
+				{
+					ft_fill(s, i, nb);
+					nb++;
+				}
 				i++;
 			}
+			if (nb < 10)
+			{
+				i = 0;
+				while(s[i])
+				{
+					ft_putchar(s[i]);
+					i++;
+				}
+			}
 		}
-		free(s);
+		else
+			write (1,"\n",1);
 	}
+	free(s);
 	close(fd);
 	return (0);
 }
