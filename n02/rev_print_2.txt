@@ -1,3 +1,5 @@
+return file : rev_print.c
+function autorisée : Write
 write a function taht pint a string but in reverse ordrer, 
 it must return its parameter.  Beware that the string wont be modifiable.
 
