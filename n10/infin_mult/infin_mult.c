@@ -60,14 +60,14 @@ void	infin_mult(char *s1, char *s2)
 		i--;
 	}
 	i = len_all - 1;
-	while (i > 0)
+	while (i >= 0)
 	{
 		arr[i - 1] = arr[i - 1] + arr[i] / 10;
 		arr[i] = arr[i] % 10 ;
 		i--;
 	}
 	i = 0;
-	while(arr[i] == 0)
+	while(i < len_all && arr[i] == 0)
 		i++;
 	while (i < len_all)
 	{
