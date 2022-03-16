@@ -103,7 +103,7 @@ int	main(int ac, char **av)
 				s1++;
 			if (*s2 == '-')
 				s2++;
-			if (*s1 != 0 && *s2 != 0)
+			if (*s1 != '0' && *s2 != '0')
 				write (1,"-", 1);
 			infin_mult(s1, s2);
 		}
