@@ -110,7 +110,7 @@ int main(int ac, char **av)
                 i++;
             }
             i = 0;
-            if (nb < 10)
+            if (nb <= 10)
             {
                 while (s[i])
                 {
